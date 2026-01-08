@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title></title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Basic theme color for mobile -->
+    <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id = "introduction">
+            <h2>Jemimah Ogunderu</h2>
+            <p>Hello, my name is Jemimah.</p>
+        </section>
+
+        <hr>
+
+        <section id = "portfolio">
+            <h2> Projects </h2>
+            below are some of the personal projects I'm working on
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> App1</p>
+    </footer>
+
+    <script>
+        // Small helper: set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
