@@ -3,50 +3,36 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title></title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Basic theme color for mobile -->
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="A simple website for Jemimah Ogunderu" />
+    <link href ="style.css" rel = "stylesheet">
+    <title> My website | Jemimah Ogunderu</title>
 </head>
 
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
+    <header class = "header-container">
+        <nav class="navbar-container header-item">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">HOME</a></li>
+                <li class="nav-item"><a href="#">RESUMÉ</a></li>
+                <li class="nav-item"><a href="#">PROJECTS</a></li>
+                <li class="nav-item"><a href="#">BLOG</a></li>
+                <li class="nav-item"><a href="#">CONTACT</a></li>
             </ul>
         </nav>
+
+        <div class = "pic-container header-item">  
+            <img src = "./App1/assets/images/profile-pic.png">
+        </div>
+
+        <div class="hero-content header-item">
+            <p>Software Developer | Writer |  </p>
+        </div>
     </header>
 
-    <main id="main">
-        <section id = "introduction">
-            <h2>Jemimah Ogunderu</h2>
-            <p>Hello, my name is Jemimah.</p>
-        </section>
-
-        <hr>
-
-        <section id = "portfolio">
-            <h2> Projects </h2>
-            below are some of the personal projects I'm working on
-        </section>
+    <main>
     </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> App1</p>
-    </footer>
-
-    <script>
-        // Small helper: set current year
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <footer></footer>
 </body>
+
 </html>

@@ -1,16 +1,101 @@
 *{
-    padding: 0;
     margin: 0;
-
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-ul{
+header {
+    min-height: 35em;
+    background: linear-gradient(to bottom, hsla(160, 40%, 92%, 0.8), hsla(160, 40%, 85%, 0.8)); /* gradient instead of flat */
+    box-shadow: 0 4px 12px rgba(112, 146, 196, 0.2); /* slightly stronger, softer shadow */
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: center; /* vertically center content */
+    align-items: center;     /* horizontally center content */
+}
+
+.navbar-container {
+    position: absolute;
+    top: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(112, 146, 196, 0.15);
+    background: linear-gradient(90deg, hsla(120, 29%, 97%, 0.9), hsla(150, 18%, 96%, 0.6)); /* refined gradient */
+    margin-bottom: 3rem; /* adds spacing below navbar before image */
+}
+
+
+.navbar-container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+nav li{
     list-style: none;
 }
 
-#introduction{
-    border: black 5px;
+.nav-item a {
+    display: block;
+    padding: 0.8rem 1.5rem; /* slightly more balanced */
+    border-radius: 35px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    transition: all 0.3s ease; /* smooth dancing effect*/
 }
+
+.nav-item a:hover {
+    background: linear-gradient(45deg, #8db7b7, #b0e0d6);
+    transform: translateY(-2px); /* subtle lift effect */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+.pic-container {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center if container has height */
+    height: 100%;            /* make it fill the header if needed */
+}
+
+.pic-container img {
+    width: 220px; /* slightly bigger */
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* subtle depth */
+    transition: transform 0.3s ease; /* smooth hover scale */
+}
+
+.pic-container img:hover {
+    transform: scale(1.05); /* small hover zoom */
+}
+
+
+
+
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    .navbar-container{
+        padding: 1rem;
+    }
+
+    .navbar-container ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .nav-item a{
+        padding: 0.75rem;
+        border-radius: 20px;
+        text-align: center;
+    }
+}
+
